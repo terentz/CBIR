@@ -1,0 +1,14 @@
+EXE_MODE		= 2
+IMAGE_LIST_FILE		= imageList
+CREATE_TABLE_FILE	= createImageTable.sql
+POPULATE_TABLE_FILE	= insertDataExternal.sql
+BITMAP_HOME		= /home/terentz/Pictures/cbir_bmp/
+BITMAP_LINK		= 
+DB_HOST			= 
+DB_USER			= 
+DB_PWD			= 
+DB_NAME			= cbir 
+BASE_REF		= http://localhost/
+IMAGE_DIR		= 
+BITMAP_HOME_REL	= 
+PIX_PER_PAGE	= 

@@ -1,0 +1,220 @@
+@CHARSET "UTF-8";
+
+/* DOCUMENT, GENERAL */
+
+body{
+	background-image:url('../images/cbir/layout/bubbles.jpg');
+/*	color : #CD0000;	*/
+}
+table{
+	border : none;
+}
+.hidden {
+	display: none;
+}
+
+/* FORM STYLES */
+/* TODO - add a gradient to the background of the form */
+div#formCont {
+	height:200px;
+	padding: 20px;
+	margin-top:12px;
+	margin-left:8px;
+	background:#40464B;
+	border-radius:6px;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	opacity:0.8;
+}
+div#formCont:hover {
+	opacity: 1.0;
+}
+div#formCont.max {
+	width: 400px;
+}
+div#formCont.min {
+	width: 170px;
+}
+.featureLabel {
+	width: 120px;
+}
+/* sliders */ 
+/* TODO work on spicing this up! */
+input[type="range"] {
+	background-color: #65E3F2;
+    height: 12px;
+    width: 180px;
+    cursor: pointer;
+}
+td.slider {
+    padding-left:15px;
+    padding-right:15px;
+}
+/* checkboxes */
+input[type="checkbox"] {
+	display: none;
+}
+input[type="checkbox"] + label {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+input[type="checkbox"] + label span {
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	margin: -1px 4px 0 0;
+	vertical-align: middle;
+	background:url(../images/cbir/layout/check_radio_sheet.png) left top no-repeat;
+	cursor: pointer;	
+}
+input[type="checkbox"]:checked + label span {
+	background:url(../images/cbir/layout/check_radio_sheet.png) -19px top no-repeat;
+}
+/* radios */
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label {
+    font-family:Arial, sans-serif;
+    font-size:15px;  /* TODO fix this font */
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../images/cbir/layout/check_radio_sheet.png) -38px top no-repeat;
+    cursor:pointer;
+}
+input[type="radio"]:checked + label span {
+    background:url(../images/cbir/layout/check_radio_sheet.png) -57px top no-repeat;
+}
+/* textboxes */
+input[type="text"] {
+    background-color: #3C3E40;
+    border-color: #353730;
+    cursor: pointer;
+}
+input[type="text"]:focus {
+    border-color: #313133;
+}
+/* action buttons */
+.actionButton {
+	border: solid 2px #353730; 
+	border-style: outset;
+	cursor: pointer;
+	text-align:center;	
+	margin-left: 6px;
+	margin-right: 6px;
+	padding-bottom: 4px;
+	padding-top: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+/* GALLERY TABLE */
+table#galleryTable{
+	width: 100%;
+/*	border: solid black 1px;	*/
+}
+td.galleryContainer{
+	width: 100%;	
+/*	display: table;	*/
+}
+div.galleryContainer{
+	padding: 5px;
+	width: auto;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+div.imgCont{
+	padding: 12px;
+	float: left;
+	width: auto;
+}
+div.imgDiv{
+	padding: 0px;
+	text-align: center;
+	vertical-align: middle;
+}
+div.cap{
+	padding: 0px;
+	text-align: center;
+	vertical-align: top;
+}
+img{
+	padding: none;
+	border-color: #0066FF;
+	border-width: 4px;
+	border-style: outset;
+	width: 220px;
+	height: 150px;
+}
+
+/* GALLERY NAVIGATION */
+span.pgNum, span.oneTurn {
+/*	float: left;	*/
+    cursor:pointer;
+}
+span.pgNum, span.oneTurn {
+	width: 15px;
+	float: left;
+    cursor:pointer;
+}
+span.currentPg {
+	color: red;
+}
+div#pageNumListDiv {
+	width: 100%;
+	text-align: center;
+}
+
+/* HEADINGS, TEXT */
+/*
+h1{
+	text-align : center;
+	font-style : oblique;
+}
+h2{
+    text-align : center;
+}
+h3{
+	text-align : center;
+}
+.bigText{
+	font-size 		: 32pt;
+	text-align 		: center;
+	text-decoration : blink;
+	font-weight 	: bold;	
+}
+.paraHead{
+	font-weight	: bold;
+}
+*/
+
+
+/* OLD FORM CONTROLS */
+
+input.coolButton{
+	font-style 		 : italic;
+    font-size        : 14pt;
+	background-color : aqua;
+	border-color	 : #CD0000;	
+}
+input.minorButton{
+    font-style       : italic;
+    font-size        : 11pt;
+    background-color : aqua;
+    border-color     : #CD0000;
+}
+input.coolField{
+    border-color    : #CD0000;
+    font-size       : 14pt;
+}
+form#viewAll{
+	vertical-align : middle;
+}
+
+
